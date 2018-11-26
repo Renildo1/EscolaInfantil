@@ -1,0 +1,137 @@
+@charset "UTF-8";
+html,
+body,
+header,
+#into{
+	height: 100%;
+}
+$c: cover;
+$n: normal;
+$font1: Arial, Helvetica, sans-serif;
+$font2: Avant;
+$font3: big;
+$fundo:  rgba(252, 249, 249, 0.822); 
+#into{
+	background: url("http://i68.tinypic.com/34zmt7r.jpg") no-repeat center center fixed;
+	-webkit-background-size: $c; 
+	-moz-background-size: $c; 
+	-o-background-size: $c; 
+	background-size: $c; 
+}
+#principal{
+	background: url("http://i67.tinypic.com/10ykzyb.jpg") no-repeat center center fixed;
+	-webkit-background-size: $c; 
+	-moz-background-size: $c; 
+	-o-background-size: $c; 
+	background-size: $c; 
+}
+
+@font-face {
+    font-family: 'Avant';
+    src: url('../font/Avant\ Grande\ Demo.ttf');
+    font-weight: $n;
+    font-style: $n;
+}
+@font-face {
+    font-family: 'big';
+    src: url('../font/Big\ Snow.otf'),
+         url('../font/Big\ Snow.ttf');
+    font-weight: $n;
+    font-style: $n;
+
+}
+#destaques{
+	height: 100vh;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	p{
+		font-family: $font1;
+		font-size: 27px;
+		
+	}
+}
+#galeria{
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	justify-content: space-around;
+	align-items: stretch;
+	height: 100%;
+	text-align: center;
+	img{
+		margin: 0px 10px;
+		width: 340px;
+		height: 225px;
+		padding: 5px;
+		filter: grayscale(100%);
+		transition: 1s;
+		border:4px solid rgb(7, 2, 68);
+		border: 2px solid rgb(1, 31, 167);
+		font-size: 25px;
+		&:hover{
+			filter: grayscale(0%);
+			transform: scale(1.1);
+		}
+	}
+	.item1 h2{
+		font-size: 45px;
+		font-family: big;	
+		background-color: $fundo;
+		margin: 40px 10px;
+		margin-top: 0%;
+		color: rgb(8, 162, 252);
+	}
+}
+a.dropdown-item:hover {
+	background-color: $fundo;
+
+}
+a:hover{
+	background-color: $fundo;
+
+}
+.top-nav-collapse{
+	background-color: rgb(2, 233, 250);
+}
+#map-container{
+	height: 400px;
+}
+#menu a{
+	font-family: $font2;
+	font-size: 45px;
+}
+h2{
+	font-family: $font2;
+	font-size: 70px;
+}
+.card{
+	background-color: $fundo;
+}
+h5 {
+	font-family: $font3;
+	font-size: 70px;
+}
+h4 {
+	font-family: $font3;
+	font-size: 40px;
+}
+#destaques1 a{
+	margin-left: 90px;
+	margin-right: 90px;
+}
+
+#myTab a{
+	background-color:  $fundo;
+	font-family: $font3;
+	font-size: 35px;
+	
+}
+#myTabContent{
+	background-color: $fundo;
+}
+p{
+	font-family: $font1;
+	font-size: 17px;	
+}
+
